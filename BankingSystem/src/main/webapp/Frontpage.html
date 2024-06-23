@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <style>
+    body {
+    background: linear-gradient(to bottom, #0d324d, #448faf);
+            /* Dark background color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #ecf0f1; /* Light text color */
+            font-family: 'Arial', sans-serif;
+            flex-direction: column; /* Adjusted to column layout */
+        }
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .art, .are {
+            padding: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border-radius: 8px;
+            transition: background-color 0.3s ease-in-out;
+            margin-bottom: 20px; /* Adjusted margin between title and buttons */
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: black; /* Light text color */
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 10px; /* Add margin between buttons */
+            transition: background-color 0.3s ease-in-out;
+        }
+        input[type="submit"]:hover {
+            background-color: #2ecc71; /* Green color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Banking System</h1>
+    <form class="are" action="getdata" method="post">
+        <input type="submit" value="Get All Records">
+    </form>
+    <form class="art" action="AddUser.html" method="get">
+        <input type="submit" value="Add User here">
+    </form>
+    <form class="art" action="GetData.html" method="post">
+        <input type="submit" value="Fetch data here">
+    </form>
+     <form class="art" action="EditForm.html" method="get">
+        <input type="submit" value="Edit Details">
+    </form>
+     <form class="art" action="getNomini" method="post">
+        <input type="submit" value=" Get Nominee's list">
+    </form>
+</body>
+</html>
